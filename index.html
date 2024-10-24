@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bg-score">
+           <p id="home-el">0</p>
+        </div>
+        <div class="bg-score">
+            <p id="away-el">0</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <button class="btn" onclick="addOne()">+1</button>
+            <button class="btn" onclick="addTwo()">+2</button>
+            <button class="btn" onclick="addThree()">+3</button>
+        </div>
+        <div class="right">
+            <button class="btn" onclick="addOneGuest()">+1</button>
+            <button class="btn" onclick="addTwoGuest()">+2</button>
+            <button class="btn" onclick="addThreeGuest()">+3</button>
+        </div>
+    </div>
+    <div class="container">
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
